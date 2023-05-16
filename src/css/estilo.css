@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul, li {
+    list-style: none;
+
+}
+
+/* Estilização Body*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    min-width: 600px;
+    margin: 0 auto;
+    color: #333333;
+}
+
+body.modo_escuro {
+    color: #f5f5f5;
+   
+}
+
+img.background{
+    position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .img_botao {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+
+}
+
+header #bt_alt_tema {
+    background: none;
+    border: none;
+
+}
+
+header .logo:hover,
+header .img_botao:hover,
+main .card_pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+
+main {
+    padding: 25px;
+
+}
+
+main .list_pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+/* Estilização Cards */
+
+main .card_pokemon{
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .card_pokemon:hover {
+    background-color: #96d9e6;
+
+}
+
+.modo_escuro .card_pokemon {
+    background-color: #a8a8a8;
+}
+
+main .card_pokemon,
+.info_pokemon {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .card_pokemon .info_pokemon span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .desc {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+main .card_pokemon .gif {
+    width: 90px;
+    height: 90px;
+    
+}
+
+main .card_pokemon .gif_pidgeotto {
+    width: 100px;
+    height: 100px;
+    
+}
+
+main .card_pokemon .tipos {
+    display: flex;
+    gap: 15px;
+
+}
+
+main .card_pokemon .tipo {
+    padding: 5px;
+    border-radius: 10px;
+    margin: 8px 0px;
+
+}
+
+
+/* Elementos */
+
+.grama {
+    background-color: #7ac74c;
+    list-style: none;
+}
+
+.veneno {
+    background-color: #df67df;
+}
+
+.fogo {
+    background-color: #ee8130;
+}
+
+.agua {
+    background-color: #6390f0;
+}
+
+.inseto {
+    background-color: #a6b91a;
+}
+
+.voador{
+    background-image: linear-gradient( to bottom, #6e6d6d, #4c8892, #2298af );
+}
+
+
+/* scrollbar */
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1e9e9;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #582965;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
